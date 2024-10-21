@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:FlourFlowDesktop"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
 
-    </Grid>
+	<Window.Resources>
+		<ResourceDictionary Source="Resources/Styles.xaml"/>
+	</Window.Resources>
+
+	<Grid>
+
+	</Grid>
 </Window>
