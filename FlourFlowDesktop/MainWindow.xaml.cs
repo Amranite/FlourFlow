@@ -63,6 +63,9 @@ namespace FlourFlowDesktop
 
 				_ingredientRepository.Add(ingredient);
 				LoadIngredients();
+
+				// Clear input fields after adding the ingredient
+				ClearInputFields();
 			}
 			catch (Exception ex)
 			{
@@ -110,5 +113,25 @@ namespace FlourFlowDesktop
 			}
 
 		}
+
+		// This method is called when the text in the ingredient fields changes to enable or disable the Add Ingredient button
+		private void IngredientFields_TextChanged(object sender, TextChangedEventArgs e)
+		{
+			bool isValid = !string.IsNullOrWhiteSpace(IngredientNameTextBox.Text) &&
+						   !string.IsNullOrWhiteSpace(QuantityTextBox.Text) &&
+						   !string.IsNullOrWhiteSpace(UnitTextBox.Text) &&
+						   !string.IsNullOrWhiteSpace(PriceTextBox.Text);
+
+			AddIngredientButton.IsEnabled = isValid;
+		}
+
+		private void ClearInputFields()
+		{
+			IngredientNameTextBox.Text = string.Empty;
+			QuantityTextBox.Text = string.Empty;
+			UnitTextBox.Text = string.Empty;
+			PriceTextBox.Text = string.Empty;
+		}
+
 	}
 }

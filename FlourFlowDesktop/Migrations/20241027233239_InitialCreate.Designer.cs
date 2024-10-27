@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlourFlowDesktop.Migrations
 {
     [DbContext(typeof(FlourFlowContext))]
-    [Migration("20241027192301_InitialCreate")]
+    [Migration("20241027233239_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

@@ -35,6 +35,6 @@ This document outlines the features, installation, instructions, and technologie
 - [ ] Use a LINQ statement and lambda expression for each model
 - [x] 2/3rds of the controls are linked to a Style that are in a resource file (xaml)
 - [x] 4/5th of the displayed texts are retrieved from one or more resource files (resx)
-- [ ] C# code is used to manage at least 2 controls
-- [ ] Try/Catch block is used at least once
+- [x] C# code is used to manage at least 2 controls
+- [x] Try/Catch block is used at least once
 - [x] At least 3 types of containers are used in XAML

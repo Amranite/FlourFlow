@@ -17,18 +17,21 @@
 			<TabItem Header="{x:Static resources:Strings.IngredientsTab}">
 				<StackPanel Margin="10">
 					<TextBlock Text="{x:Static resources:Strings.IngredientNameLabel}"/>
-					<TextBox x:Name="IngredientNameTextBox"/>
+					<TextBox x:Name="IngredientNameTextBox" TextChanged="IngredientFields_TextChanged"/>
 
 					<TextBlock Text="{x:Static resources:Strings.QuantityLabel}"/>
-					<TextBox x:Name="QuantityTextBox"/>
+					<TextBox x:Name="QuantityTextBox" TextChanged="IngredientFields_TextChanged"/>
 
 					<TextBlock Text="{x:Static resources:Strings.UnitLabel}"/>
-					<TextBox x:Name="UnitTextBox"/>
+					<TextBox x:Name="UnitTextBox" TextChanged="IngredientFields_TextChanged"/>
 
 					<TextBlock Text="{x:Static resources:Strings.PriceLabel}"/>
-					<TextBox x:Name="PriceTextBox"/>
+					<TextBox x:Name="PriceTextBox" TextChanged="IngredientFields_TextChanged"/>
 
-					<Button Content="{x:Static resources:Strings.AddIngredientButton}" Click="AddIngredient_Click" />
+					<Label x:Name="StatusLabel" Content="" Foreground="Red" Margin="5"/>
+
+
+					<Button x:Name="AddIngredientButton" Content="{x:Static resources:Strings.AddIngredientButton}" Click="AddIngredient_Click" />
 
 					<DataGrid x:Name="IngredientsDataGrid">
 						<DataGrid.Columns>
