@@ -41,6 +41,32 @@
 					</DataGrid>
 				</StackPanel>
 			</TabItem>
+
+			<TabItem Header="{x:Static resources:Strings.OrdersTab}">
+				<StackPanel Margin="10">
+					<TextBlock Text="{x:Static resources:Strings.OrderIDLabel}"/>
+					<TextBox x:Name="OrderIDTextBox"/>
+
+					<TextBlock Text="{x:Static resources:Strings.CustomerNameLabel}"/>
+					<TextBox x:Name="CustomerNameTextBox"/>
+
+					<TextBlock Text="{x:Static resources:Strings.OrderDateLabel}"/>
+					<TextBox x:Name="OrderDateTextBox"/>
+					<!-- Consider using a DatePicker -->
+
+					<Button Content="{x:Static resources:Strings.AddOrderButton}" Click="AddOrder_Click" />
+
+					<DataGrid x:Name="OrdersDataGrid">
+						<DataGrid.Columns>
+							<DataGridTextColumn Header="{x:Static resources:Strings.OrderIDHeader}" Binding="{Binding OrderId}" IsReadOnly="True"/>
+							<DataGridTextColumn Header="{x:Static resources:Strings.CustomerNameHeader}" Binding="{Binding CustomerName}"/>
+							<DataGridTextColumn Header="{x:Static resources:Strings.OrderDateHeader}" Binding="{Binding OrderDate}"/>
+							<DataGridTextColumn Header="{x:Static resources:Strings.IngredientIDHeader}" Binding="{Binding IngredientId}"/>
+						</DataGrid.Columns>
+					</DataGrid>
+				</StackPanel>
+			</TabItem>
+
 		</TabControl>
 	</Grid>
 </Window>

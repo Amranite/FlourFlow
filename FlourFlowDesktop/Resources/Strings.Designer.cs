@@ -70,11 +70,47 @@ namespace FlourFlowDesktop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Order.
+        /// </summary>
+        public static string AddOrderButton {
+            get {
+                return ResourceManager.GetString("AddOrderButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer Name.
+        /// </summary>
+        public static string CustomerNameHeader {
+            get {
+                return ResourceManager.GetString("CustomerNameHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer Name:.
+        /// </summary>
+        public static string CustomerNameLabel {
+            get {
+                return ResourceManager.GetString("CustomerNameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ID.
         /// </summary>
         public static string IDHeader {
             get {
                 return ResourceManager.GetString("IDHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ingredient ID.
+        /// </summary>
+        public static string IngredientIDHeader {
+            get {
+                return ResourceManager.GetString("IngredientIDHeader", resourceCulture);
             }
         }
         
@@ -111,6 +147,51 @@ namespace FlourFlowDesktop.Resources {
         public static string NameHeader {
             get {
                 return ResourceManager.GetString("NameHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order Date.
+        /// </summary>
+        public static string OrderDateHeader {
+            get {
+                return ResourceManager.GetString("OrderDateHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order Date:.
+        /// </summary>
+        public static string OrderDateLabel {
+            get {
+                return ResourceManager.GetString("OrderDateLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order ID.
+        /// </summary>
+        public static string OrderIDHeader {
+            get {
+                return ResourceManager.GetString("OrderIDHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order ID:.
+        /// </summary>
+        public static string OrderIDLabel {
+            get {
+                return ResourceManager.GetString("OrderIDLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orders.
+        /// </summary>
+        public static string OrdersTab {
+            get {
+                return ResourceManager.GetString("OrdersTab", resourceCulture);
             }
         }
         

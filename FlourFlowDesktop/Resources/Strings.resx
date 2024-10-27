@@ -153,4 +153,31 @@
   <data name="PriceHeader" xml:space="preserve">
     <value>Price</value>
   </data>
+  <data name="OrdersTab" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="OrderIDLabel" xml:space="preserve">
+    <value>Order ID:</value>
+  </data>
+  <data name="CustomerNameLabel" xml:space="preserve">
+    <value>Customer Name:</value>
+  </data>
+  <data name="OrderDateLabel" xml:space="preserve">
+    <value>Order Date:</value>
+  </data>
+  <data name="AddOrderButton" xml:space="preserve">
+    <value>Add Order</value>
+  </data>
+  <data name="OrderIDHeader" xml:space="preserve">
+    <value>Order ID</value>
+  </data>
+  <data name="CustomerNameHeader" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="OrderDateHeader" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="IngredientIDHeader" xml:space="preserve">
+    <value>Ingredient ID</value>
+  </data>
 </root>
