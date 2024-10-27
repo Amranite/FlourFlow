@@ -180,4 +180,25 @@
   <data name="IngredientIDHeader" xml:space="preserve">
     <value>Ingredient ID</value>
   </data>
+  <data name="SuppliersTab" xml:space="preserve">
+    <value>Suppliers</value>
+  </data>
+  <data name="SupplierNameLabel" xml:space="preserve">
+    <value>Supplier Name:</value>
+  </data>
+  <data name="ContactLabel" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="AddSupplierButton" xml:space="preserve">
+    <value>Add Supplier</value>
+  </data>
+  <data name="SupplierIDHeader" xml:space="preserve">
+    <value>Supplier ID</value>
+  </data>
+  <data name="SupplierNameHeader" xml:space="preserve">
+    <value>Supplier Name</value>
+  </data>
+  <data name="ContactHeader" xml:space="preserve">
+    <value>Contact</value>
+  </data>
 </root>

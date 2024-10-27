@@ -79,6 +79,33 @@ namespace FlourFlowDesktop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Supplier.
+        /// </summary>
+        public static string AddSupplierButton {
+            get {
+                return ResourceManager.GetString("AddSupplierButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact.
+        /// </summary>
+        public static string ContactHeader {
+            get {
+                return ResourceManager.GetString("ContactHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact:.
+        /// </summary>
+        public static string ContactLabel {
+            get {
+                return ResourceManager.GetString("ContactLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Customer Name.
         /// </summary>
         public static string CustomerNameHeader {
@@ -228,6 +255,42 @@ namespace FlourFlowDesktop.Resources {
         public static string QuantityLabel {
             get {
                 return ResourceManager.GetString("QuantityLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supplier ID.
+        /// </summary>
+        public static string SupplierIDHeader {
+            get {
+                return ResourceManager.GetString("SupplierIDHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supplier Name.
+        /// </summary>
+        public static string SupplierNameHeader {
+            get {
+                return ResourceManager.GetString("SupplierNameHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supplier Name:.
+        /// </summary>
+        public static string SupplierNameLabel {
+            get {
+                return ResourceManager.GetString("SupplierNameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suppliers.
+        /// </summary>
+        public static string SuppliersTab {
+            get {
+                return ResourceManager.GetString("SuppliersTab", resourceCulture);
             }
         }
         
