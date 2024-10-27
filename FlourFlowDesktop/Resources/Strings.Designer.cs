@@ -59,5 +59,113 @@ namespace FlourFlowDesktop.Resources {
                 resourceCulture = value;
             }
         }
+
+		/// <summary>
+		///   Looks up a localized string similar to Add Ingredient.
+		/// </summary>
+		public static string AddIngredientButton {
+            get {
+                return ResourceManager.GetString("AddIngredientButton", resourceCulture);
+            }
+        }
+
+		/// <summary>
+		///   Looks up a localized string similar to ID.
+		/// </summary>
+		public static string IDHeader {
+            get {
+                return ResourceManager.GetString("IDHeader", resourceCulture);
+            }
+        }
+
+		/// <summary>
+		///   Looks up a localized string similar to Ingredient Name:.
+		/// </summary>
+		public static string IngredientNameLabel {
+            get {
+                return ResourceManager.GetString("IngredientNameLabel", resourceCulture);
+            }
+        }
+
+		/// <summary>
+		///   Looks up a localized string similar to Ingredients.
+		/// </summary>
+		public static string IngredientsTab {
+            get {
+                return ResourceManager.GetString("IngredientsTab", resourceCulture);
+            }
+        }
+
+		/// <summary>
+		///   Looks up a localized string similar to FlourFlow.
+		/// </summary>
+		public static string MainWindowTitle {
+            get {
+                return ResourceManager.GetString("MainWindowTitle", resourceCulture);
+            }
+        }
+
+		/// <summary>
+		///   Looks up a localized string similar to Name.
+		/// </summary>
+		public static string NameHeader {
+            get {
+                return ResourceManager.GetString("NameHeader", resourceCulture);
+            }
+        }
+
+		/// <summary>
+		///   Looks up a localized string similar to Price.
+		/// </summary>
+		public static string PriceHeader {
+            get {
+                return ResourceManager.GetString("PriceHeader", resourceCulture);
+            }
+        }
+
+		/// <summary>
+		///   Looks up a localized string similar to Price per Unit:.
+		/// </summary>
+		public static string PriceLabel {
+            get {
+                return ResourceManager.GetString("PriceLabel", resourceCulture);
+            }
+        }
+
+		/// <summary>
+		///   Looks up a localized string similar to Quantity.
+		/// </summary>
+		public static string QuantityHeader {
+            get {
+                return ResourceManager.GetString("QuantityHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quantity:.
+        /// </summary>
+        public static string QuantityLabel {
+            get {
+                return ResourceManager.GetString("QuantityLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit.
+        /// </summary>
+        public static string UnitHeader {
+            get {
+                return ResourceManager.GetString("UnitHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit:.
+        /// </summary>
+        public static string UnitLabel {
+            get {
+                return ResourceManager.GetString("UnitLabel", resourceCulture);
+            }
+        }
     }
 }

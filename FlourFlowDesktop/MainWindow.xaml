@@ -4,14 +4,43 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlourFlowDesktop"
+		xmlns:resources="clr-namespace:FlourFlowDesktop.Resources"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="{x:Static resources:Strings.MainWindowTitle}" Height="450" Width="800">
 
 	<Window.Resources>
 		<ResourceDictionary Source="Resources/Styles.xaml"/>
 	</Window.Resources>
 
 	<Grid>
+		<TabControl>
+			<TabItem Header="{x:Static resources:Strings.IngredientsTab}">
+				<StackPanel Margin="10">
+					<TextBlock Text="{x:Static resources:Strings.IngredientNameLabel}"/>
+					<TextBox x:Name="IngredientNameTextBox"/>
 
+					<TextBlock Text="{x:Static resources:Strings.QuantityLabel}"/>
+					<TextBox x:Name="QuantityTextBox"/>
+
+					<TextBlock Text="{x:Static resources:Strings.UnitLabel}"/>
+					<TextBox x:Name="UnitTextBox"/>
+
+					<TextBlock Text="{x:Static resources:Strings.PriceLabel}"/>
+					<TextBox x:Name="PriceTextBox"/>
+
+					<Button Content="{x:Static resources:Strings.AddIngredientButton}" Click="AddIngredient_Click" />
+
+					<DataGrid x:Name="IngredientsDataGrid">
+						<DataGrid.Columns>
+							<DataGridTextColumn Header="{x:Static resources:Strings.IDHeader}" Binding="{Binding IngredientId}" IsReadOnly="True"/>
+							<DataGridTextColumn Header="{x:Static resources:Strings.NameHeader}" Binding="{Binding Name}"/>
+							<DataGridTextColumn Header="{x:Static resources:Strings.QuantityHeader}" Binding="{Binding QuantityInStock}"/>
+							<DataGridTextColumn Header="{x:Static resources:Strings.UnitHeader}" Binding="{Binding Unit}"/>
+							<DataGridTextColumn Header="{x:Static resources:Strings.PriceHeader}" Binding="{Binding PricePerUnit}"/>
+						</DataGrid.Columns>
+					</DataGrid>
+				</StackPanel>
+			</TabItem>
+		</TabControl>
 	</Grid>
 </Window>
