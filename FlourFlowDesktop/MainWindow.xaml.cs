@@ -23,6 +23,7 @@ namespace FlourFlowDesktop
 		private readonly IngredientRepository _ingredientRepository;
 		private readonly OrderRepository _orderRepository;
 		private readonly SupplierRepository _supplierRepository;
+
 		public MainWindow()
 		{
 			InitializeComponent();
@@ -148,7 +149,5 @@ namespace FlourFlowDesktop
 
 			IngredientListBox.ItemsSource = filteredIngredients;
 		}
-
-
 	}
 }
