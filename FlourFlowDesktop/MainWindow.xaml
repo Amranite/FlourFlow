@@ -15,84 +15,87 @@
 	<Grid>
 		<TabControl>
 			<TabItem Header="{x:Static resources:Strings.IngredientsTab}">
-				<StackPanel Margin="10">
-					<TextBlock Text="{x:Static resources:Strings.IngredientNameLabel}"/>
-					<TextBox x:Name="IngredientNameTextBox" TextChanged="IngredientFields_TextChanged"/>
-
-					<TextBlock Text="{x:Static resources:Strings.QuantityLabel}"/>
-					<TextBox x:Name="QuantityTextBox" TextChanged="IngredientFields_TextChanged"/>
-
-					<TextBlock Text="{x:Static resources:Strings.UnitLabel}"/>
-					<TextBox x:Name="UnitTextBox" TextChanged="IngredientFields_TextChanged"/>
-
-					<TextBlock Text="{x:Static resources:Strings.PriceLabel}"/>
-					<TextBox x:Name="PriceTextBox" TextChanged="IngredientFields_TextChanged"/>
-
-					<Label x:Name="StatusLabel" Content="" Foreground="Red" Margin="5"/>
-
-
-					<Button x:Name="AddIngredientButton" Content="{x:Static resources:Strings.AddIngredientButton}" Click="AddIngredient_Click" />
-
+				<ScrollViewer VerticalScrollBarVisibility="Auto">
 					<StackPanel Margin="10">
-						<TextBox x:Name="IngredientFilterTextBox" Width="200" TextChanged="IngredientFilterTextBox_TextChanged"/>
-						<ListBox x:Name="IngredientListBox" Width="300" Height="200"/>
-					</StackPanel>
+						<TextBlock Text="{x:Static resources:Strings.IngredientNameLabel}"/>
+						<TextBox x:Name="IngredientNameTextBox" TextChanged="IngredientFields_TextChanged"/>
 
-					<DataGrid x:Name="IngredientsDataGrid">
-						<DataGrid.Columns>
-							<DataGridTextColumn Header="{x:Static resources:Strings.IDHeader}" Binding="{Binding IngredientId}" IsReadOnly="True"/>
-							<DataGridTextColumn Header="{x:Static resources:Strings.NameHeader}" Binding="{Binding Name}"/>
-							<DataGridTextColumn Header="{x:Static resources:Strings.QuantityHeader}" Binding="{Binding QuantityInStock}"/>
-							<DataGridTextColumn Header="{x:Static resources:Strings.UnitHeader}" Binding="{Binding Unit}"/>
-							<DataGridTextColumn Header="{x:Static resources:Strings.PriceHeader}" Binding="{Binding PricePerUnit}"/>
-						</DataGrid.Columns>
-					</DataGrid>
-				</StackPanel>
+						<TextBlock Text="{x:Static resources:Strings.QuantityLabel}"/>
+						<TextBox x:Name="QuantityTextBox" TextChanged="IngredientFields_TextChanged"/>
+
+						<TextBlock Text="{x:Static resources:Strings.UnitLabel}"/>
+						<TextBox x:Name="UnitTextBox" TextChanged="IngredientFields_TextChanged"/>
+
+						<TextBlock Text="{x:Static resources:Strings.PriceLabel}"/>
+						<TextBox x:Name="PriceTextBox" TextChanged="IngredientFields_TextChanged"/>
+
+						<Button x:Name="AddIngredientButton" Content="{x:Static resources:Strings.AddIngredientButton}" Click="AddIngredient_Click" />
+
+						<StackPanel Margin="10">
+							<TextBox x:Name="IngredientFilterTextBox" Width="200" TextChanged="IngredientFilterTextBox_TextChanged"/>
+							<ListBox x:Name="IngredientListBox" Width="300" Height="200"/>
+						</StackPanel>
+
+						<DataGrid x:Name="IngredientsDataGrid">
+							<DataGrid.Columns>
+								<DataGridTextColumn Header="{x:Static resources:Strings.IDHeader}" Binding="{Binding IngredientId}" IsReadOnly="True"/>
+								<DataGridTextColumn Header="{x:Static resources:Strings.NameHeader}" Binding="{Binding Name}"/>
+								<DataGridTextColumn Header="{x:Static resources:Strings.QuantityHeader}" Binding="{Binding QuantityInStock}"/>
+								<DataGridTextColumn Header="{x:Static resources:Strings.UnitHeader}" Binding="{Binding Unit}"/>
+								<DataGridTextColumn Header="{x:Static resources:Strings.PriceHeader}" Binding="{Binding PricePerUnit}"/>
+							</DataGrid.Columns>
+						</DataGrid>
+					</StackPanel>
+				</ScrollViewer>
 			</TabItem>
 
 			<TabItem Header="{x:Static resources:Strings.OrdersTab}">
-				<StackPanel Margin="10">
-					<TextBlock Text="{x:Static resources:Strings.OrderIDLabel}"/>
-					<TextBox x:Name="OrderIDTextBox"/>
+				<ScrollViewer VerticalScrollBarVisibility="Auto">
+					<StackPanel Margin="10">
+						<TextBlock Text="{x:Static resources:Strings.OrderIDLabel}"/>
+						<TextBox x:Name="OrderIDTextBox"/>
 
-					<TextBlock Text="{x:Static resources:Strings.CustomerNameLabel}"/>
-					<TextBox x:Name="CustomerNameTextBox"/>
+						<TextBlock Text="{x:Static resources:Strings.CustomerNameLabel}"/>
+						<TextBox x:Name="CustomerNameTextBox"/>
 
-					<TextBlock Text="{x:Static resources:Strings.OrderDateLabel}"/>
-					<TextBox x:Name="OrderDateTextBox"/>
-					<!-- Consider using a DatePicker -->
+						<TextBlock Text="{x:Static resources:Strings.OrderDateLabel}"/>
+						<TextBox x:Name="OrderDateTextBox"/>
+						<!-- Consider using a DatePicker -->
 
-					<!--<Button Content="{x:Static resources:Strings.AddOrderButton}" Click="AddOrder_Click" />-->
+						<!--<Button Content="{x:Static resources:Strings.AddOrderButton}" Click="AddOrder_Click" />-->
 
-					<DataGrid x:Name="OrdersDataGrid">
-						<DataGrid.Columns>
-							<DataGridTextColumn Header="{x:Static resources:Strings.OrderIDHeader}" Binding="{Binding OrderId}" IsReadOnly="True"/>
-							<DataGridTextColumn Header="{x:Static resources:Strings.CustomerNameHeader}" Binding="{Binding CustomerName}"/>
-							<DataGridTextColumn Header="{x:Static resources:Strings.OrderDateHeader}" Binding="{Binding OrderDate}"/>
-							<DataGridTextColumn Header="{x:Static resources:Strings.IngredientIDHeader}" Binding="{Binding IngredientId}"/>
-						</DataGrid.Columns>
-					</DataGrid>
-				</StackPanel>
+						<DataGrid x:Name="OrdersDataGrid">
+							<DataGrid.Columns>
+								<DataGridTextColumn Header="{x:Static resources:Strings.OrderIDHeader}" Binding="{Binding OrderId}" IsReadOnly="True"/>
+								<DataGridTextColumn Header="{x:Static resources:Strings.CustomerNameHeader}" Binding="{Binding CustomerName}"/>
+								<DataGridTextColumn Header="{x:Static resources:Strings.OrderDateHeader}" Binding="{Binding OrderDate}"/>
+								<DataGridTextColumn Header="{x:Static resources:Strings.IngredientIDHeader}" Binding="{Binding IngredientId}"/>
+							</DataGrid.Columns>
+						</DataGrid>
+					</StackPanel>
+				</ScrollViewer>
 			</TabItem>
 
 			<TabItem Header="{x:Static resources:Strings.SuppliersTab}">
-				<StackPanel Margin="10">
-					<TextBlock Text="{x:Static resources:Strings.SupplierNameLabel}"/>
-					<TextBox x:Name="SupplierNameTextBox"/>
+				<ScrollViewer VerticalScrollBarVisibility="Auto">
+					<StackPanel Margin="10">
+						<TextBlock Text="{x:Static resources:Strings.SupplierNameLabel}"/>
+						<TextBox x:Name="SupplierNameTextBox"/>
 
-					<TextBlock Text="{x:Static resources:Strings.ContactLabel}"/>
-					<TextBox x:Name="ContactTextBox"/>
+						<TextBlock Text="{x:Static resources:Strings.ContactLabel}"/>
+						<TextBox x:Name="ContactTextBox"/>
 
-					<!--<Button Content="{x:Static resources:Strings.AddSupplierButton}" Click="AddSupplier_Click" />-->
+						<!--<Button Content="{x:Static resources:Strings.AddSupplierButton}" Click="AddSupplier_Click" />-->
 
-					<DataGrid x:Name="SuppliersDataGrid">
-						<DataGrid.Columns>
-							<DataGridTextColumn Header="{x:Static resources:Strings.SupplierIDHeader}" Binding="{Binding SupplierId}" IsReadOnly="True"/>
-							<DataGridTextColumn Header="{x:Static resources:Strings.SupplierNameHeader}" Binding="{Binding Name}"/>
-							<DataGridTextColumn Header="{x:Static resources:Strings.ContactHeader}" Binding="{Binding Contact}"/>
-						</DataGrid.Columns>
-					</DataGrid>
-				</StackPanel>
+						<DataGrid x:Name="SuppliersDataGrid">
+							<DataGrid.Columns>
+								<DataGridTextColumn Header="{x:Static resources:Strings.SupplierIDHeader}" Binding="{Binding SupplierId}" IsReadOnly="True"/>
+								<DataGridTextColumn Header="{x:Static resources:Strings.SupplierNameHeader}" Binding="{Binding Name}"/>
+								<DataGridTextColumn Header="{x:Static resources:Strings.ContactHeader}" Binding="{Binding Contact}"/>
+							</DataGrid.Columns>
+						</DataGrid>
+					</StackPanel>
+				</ScrollViewer>
 			</TabItem>
 
 		</TabControl>
