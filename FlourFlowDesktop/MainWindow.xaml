@@ -33,6 +33,11 @@
 
 					<Button x:Name="AddIngredientButton" Content="{x:Static resources:Strings.AddIngredientButton}" Click="AddIngredient_Click" />
 
+					<StackPanel Margin="10">
+						<TextBox x:Name="IngredientFilterTextBox" Width="200" TextChanged="IngredientFilterTextBox_TextChanged"/>
+						<ListBox x:Name="IngredientListBox" Width="300" Height="200"/>
+					</StackPanel>
+
 					<DataGrid x:Name="IngredientsDataGrid">
 						<DataGrid.Columns>
 							<DataGridTextColumn Header="{x:Static resources:Strings.IDHeader}" Binding="{Binding IngredientId}" IsReadOnly="True"/>

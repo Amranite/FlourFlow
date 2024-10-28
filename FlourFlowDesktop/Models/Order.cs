@@ -34,11 +34,10 @@ namespace FlourFlowDesktop.Models
 		[ForeignKey("SupplierId")]
 		public Supplier Supplier { get; set; }
 
-		// public Ingredient Ingredient { get; set; } // Navigation property for the related ingredient
-
-
-
-
+		public override string ToString()
+		{
+			return $"{OrderId} - {IngredientId} - {SupplierId}";
+		}
 
 	}
 }

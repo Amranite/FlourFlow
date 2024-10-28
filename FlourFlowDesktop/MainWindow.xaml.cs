@@ -37,6 +37,8 @@ namespace FlourFlowDesktop
 		private void LoadIngredients()
 		{
 			IngredientsDataGrid.ItemsSource = _ingredientRepository.GetAll();
+			IngredientListBox.ItemsSource = _ingredientRepository.GetAll().ToList();
+
 		}
 
 		private void LoadOrders()
@@ -132,6 +134,21 @@ namespace FlourFlowDesktop
 			UnitTextBox.Text = string.Empty;
 			PriceTextBox.Text = string.Empty;
 		}
+
+		private void IngredientFilterTextBox_TextChanged(object sender, TextChangedEventArgs e)
+		{
+			LoadFilteredIngredients(IngredientFilterTextBox.Text);
+		}
+
+		private void LoadFilteredIngredients(string filterText)
+		{
+			var filteredIngredients = _ingredientRepository.GetAll()
+				.Where(i => i.Name.Contains(filterText, StringComparison.OrdinalIgnoreCase))
+				.ToList();
+
+			IngredientListBox.ItemsSource = filteredIngredients;
+		}
+
 
 	}
 }

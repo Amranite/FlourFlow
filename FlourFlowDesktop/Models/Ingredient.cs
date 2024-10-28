@@ -21,8 +21,10 @@ namespace FlourFlowDesktop.Models
 		public double ReorderLevel { get; set; } // Reorder level for the ingredient
 		public decimal PricePerUnit { get; set; } // Price per unit of the ingredient
 
-		// public int SupplierId { get; set; } // Foreign Key
-		// public Supplier Supplier { get; set; } // Navigation property for the related supplier
+		public override string ToString()
+		{
+			return $"{Name} - {QuantityInStock} {Unit} (Price: {PricePerUnit:C})";
+		}
 
 	}
 }
