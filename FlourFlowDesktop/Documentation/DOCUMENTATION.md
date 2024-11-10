@@ -5,7 +5,8 @@
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Instructions](#instructions)
-4. [Requirements](#requirements)
+4. [Requirements 1](#requirements1)
+4. [Requirements 2](#requirements2)
 
 ## Introduction
 
@@ -24,7 +25,7 @@ This document outlines the features, installation, instructions, and technologie
 
 // TODO: Add instructions for using the application
 
-## Requirements
+## Requirements 1
 
 - [x] .NET 8.O WPF Application
 - [x] Entity Framework
@@ -38,3 +39,15 @@ This document outlines the features, installation, instructions, and technologie
 - [x] C# code is used to manage at least 2 controls
 - [x] Try/Catch block is used at least once
 - [x] At least 3 types of containers are used in XAML
+
+## Requirements 2
+- [x] Ergonomic User Interface
+- [x] Minimum 2 Bindings
+- [ ] Minimum 1 ViewModel
+- [ ] Database Seeding
+- [x] Pop-Up Window
+- [x] Use Tab Pages or Menu Structure
+- [ ] Minimum 3 Controls with Context-Menu or Context-Help
+- [x] Handle Errors
+- [x] Program Runs Flawlessly
+- [ ] BONUS: Use of New Techniques

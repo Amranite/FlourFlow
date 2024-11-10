@@ -69,6 +69,10 @@ namespace FlourFlowDesktop
 
 				// Clear input fields after adding the ingredient
 				ClearInputFields();
+
+				// Show the notification pop-up
+				var notification = new NotificationWindow("Ingredient added successfully!");
+				notification.ShowDialog();
 			}
 			catch (Exception ex)
 			{

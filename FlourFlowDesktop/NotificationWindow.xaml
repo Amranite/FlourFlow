@@ -1,0 +1,16 @@
+﻿<Window x:Class="FlourFlowDesktop.NotificationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlourFlowDesktop"
+        mc:Ignorable="d"
+        Title="NotificationWindow" Height="150" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+		<TextBlock x:Name="MessageTextBlock" Text="Operation completed successfully!"
+                   VerticalAlignment="Center" HorizontalAlignment="Center" 
+                   FontSize="16" TextWrapping="Wrap"/>
+		<Button Content="OK" Width="75" Height="25" VerticalAlignment="Bottom"
+                HorizontalAlignment="Center" Margin="0,10,0,10" Click="OkButton_Click"/>
+	</Grid>
+</Window>
